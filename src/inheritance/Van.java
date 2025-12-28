@@ -1,9 +1,14 @@
 package inheritance;
 
-public class Van extends Vehicle{
+// Van class inherits Vehicle
+public class Van extends Vehicle {
+
+    // Van specific variable
     int noOfDoor;
 
+    // Method to display van details
     public void vanDetails(){
+
         name = "HIANCE";
         color = "White";
         wheels = 4;

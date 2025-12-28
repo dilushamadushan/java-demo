@@ -1,29 +1,32 @@
 package inheritance;
 
+// Main class to test inheritance
 public class VehicaleDemo {
+
     public static void main(String[] args) {
-        //Inheritance
+
+        // Creating Car object
         Car car = new Car();
         car.carDetails();
-        car.start();
-        car.stop();
-        car.drive();
-
-        //can't be accessed outside package
-        //System.out.println(car.speed);
+        car.start();   // inherited method
+        car.stop();    // inherited method
+        car.drive();   // Car's static method
 
         System.out.println(" ");
+
+        // Creating Van object
         Van van = new Van();
         van.vanDetails();
-        car.start();
-        car.stop();
+        van.start();
+        van.stop();
 
-        //Can access Multilevel Inheritance But can't access multiple inheritance
         System.out.println(" ");
+
+        // Creating OldCar object
+        // Multilevel inheritance example
         OldCar oldCar = new OldCar();
         oldCar.oldCarDetails();
         oldCar.start();
         oldCar.stop();
-
     }
 }
